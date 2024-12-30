@@ -39,7 +39,7 @@ else:
 
         # Generate a response using the OpenAI API.
         stream = client.chat.completions.create(
-            model="o1",
+            model="o1-preview",
             messages=[
                 {"role": m["role"], "content": m["content"]}
                 for m in st.session_state.messages
